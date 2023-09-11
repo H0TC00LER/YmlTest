@@ -15,11 +15,11 @@ jobs:
       - name: Build in Debug mode
         run: dotnet build --no-restore
 
-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Build in Debug mode
-        run: dotnet build
-      - name: test
-        run: dotnet test
+  test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: Build in Debug mode
+          run: dotnet build
+        - name: test
+          run: dotnet test
